@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <title>CRUD system</title>
+</head>
+<body>
+  <div class="container">
+    <div class="head">
+      <h1>CRUDS</h1>
+      <p class="disc">Product Management System</p>
+    </div>
+    <div class="inputs">
+        <input type="text" placeholder="Title" id="title">
+        <div class="price">
+          <input type="number" placeholder="price" id="price">
+          <input type="number" placeholder="taxes" id="taxes">
+          <input type="number" placeholder="ads" id="ads">
+          <input type="number" placeholder="discount" id="discount">
+          <p class="total"></p>
+        </div>
+        <input type="number" placeholder="Count" id="count">
+        <input type="text" placeholder="Category" id="category">
+        <button class="create">Create</button>
+    </div>
+    <div class="outputs">
+      <div class="search-area">
+        <input onkeyup="searchData(this.value)" type="search" id="search" placeholder="Search">
+        <div class="search-method">
+          <button onclick="getSearchMood(this.id)" id="searchTitle">Search by Title</button>
+          <button onclick="getSearchMood(this.id)" id="searchCategory">Search by category</button>
+        </div>
+      </div>
+      <div id="deleteAll">
+      </div>
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Taxes</th>
+          <th>ADS</th>
+          <th>Discount</th>
+          <th>Total</th>
+          <th>Category</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+        <tbody id="tBody">
+          <!-- <tr>
+            <td>1</td>
+            <td>Iphone</td>
+            <td>2000</td>
+            <td>100</td>
+            <td>20</td>
+            <td>100</td>
+            <td>2020</td>
+            <td>Apple</td>
+            <td><button id="update">update</button></td>
+            <td><button id="delete">Delete</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark: #001625;
+    --light: #00406c;
+    --txt: #ececec;
+    --mainTransition: .2s;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--dark);
+    color: var(--txt);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+button{
+    width: 100%;
+    background-color: var(--light);
+    color: var(--txt);
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--mainTransition);
+    padding: .5rem 1rem;
+}
+button:hover{
+    background-color: #002e4d;
+    letter-spacing: .5px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    background-color: #000b12;
+    border: none;
+    padding: .5rem;
+    margin: .2rem 0;
+    border-radius: 5px;
+    color: var(--txt);
+    font-weight: 500;
+}
+input:focus{
+    outline: 2px solid var(--light);
+}
+.head{
+    text-align: center;
+    padding-top: 1rem;
+}
+.head h1{
+    margin: 0;
+}
+.head .disc{
+    padding: .1rem 0 1rem;
+}
+.price{
+    display: flex;
+    width: 100%;
+}
+.price input{
+    flex-grow: 1;
+    margin-right: .4rem;
+}
+.price .total{
+    min-width: 120px;
+    height: 40px;
+    margin-top: .17rem;
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--light);
+    border-radius: 5px;
+}
+.inputs .total::before{
+    content: "Total:";
+    font-weight: bold;
+    padding-right: 3px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputs input:first-of-type{
+    margin-left: 0;
+}
+.inputs .create{
+    width: 100%;
+}
+
+/* outputs */
+.outputs .search-method{
+    display: flex;
+    gap: 1rem;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin-top: .5rem;
+}
+table th{
+    border-radius: 5px 5px 0 0;
+    text-transform: uppercase;
+    background-color: #000b12;
+}
+table th,td{
+    padding: .3rem;
+}
+table tr{
+    transition: var(--mainTransition);
+}
+tr:hover{
+    background-color: #000b12;
+}
+table button{
+    padding: 0 .5rem;
+}
+table button:hover{
+    letter-spacing: 0;
+}
+#deleteAll{
+    margin: .5rem 0;
+}
