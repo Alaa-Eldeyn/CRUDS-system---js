@@ -9,6 +9,25 @@
     --txt: #ececec;
     --mainTransition: .2s;
 }
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--light);
+    /* border-radius: 5px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #005187;
+}
 body{
     font-family: 'Cairo', sans-serif;
     background-color: var(--dark);
@@ -31,7 +50,7 @@ button{
     padding: .5rem 1rem;
 }
 button:hover{
-    background-color: #002e4d;
+    background-color: #005187;
     letter-spacing: .5px;
 }
 input{
